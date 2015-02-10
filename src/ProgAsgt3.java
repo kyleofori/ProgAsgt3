@@ -17,8 +17,8 @@ public class ProgAsgt3 {
         Path path = Paths.get("/Users/kyleofori/Desktop/Coursera/ProgAsgt3/src/kargerMinCut.txt");
         Charset charset = Charset.forName("US-ASCII");
         String line;
-        final int VERTEX1 = 2;
-        final int VERTEX2 = 5;
+//        final int VERTEX1 = 2;
+//        final int VERTEX2 = 5;
 
         try (BufferedReader reader = Files.newBufferedReader(path, charset)) {
             while ((line = reader.readLine()) != null) {
@@ -30,20 +30,21 @@ public class ProgAsgt3 {
                     //this is the point at which I have an array of integers.
                     printVertices(numbers, i);
 
-                    if(numbers[i] == VERTEX1) {
-                        Collections.addAll(a, numbers);}
-                    if(numbers[i] == VERTEX2) {
-                        Collections.addAll(b, numbers);}
-                    for (int y: b) {
-                        for (int x: a) {
-                            if (x==y) {
-                                break;
-                            }
-                        }
-                        a.add(y);
-                        }
-                    }
-                    System.out.println(a);
+//                    if(numbers[i] == VERTEX1) {
+//                        Collections.addAll(a, numbers);}
+//                    if(numbers[i] == VERTEX2) {
+//                        Collections.addAll(b, numbers);}
+//                    for (int y: b) {
+//                        for (int x: a) {
+//                            if (x==y) {
+//                                break;
+//                            }
+//                        }
+//                        a.add(y);
+//                        }
+//                    }
+//                    System.out.println(a);
+                }
             }
         } catch (IOException x) {
             System.err.format("IOException: %s%n", x);
